@@ -21,6 +21,7 @@
 			"dojox/mobile/Slider",
 			"dojox/mobile/TextBox",
 			"dojox/mobile/SearchBox",
+			"dojox.mobile.ImageInput",
 			"dojox/mobile/ExpandingTextArea",
 			"dojox/mobile/ToggleButton"
 		]);
@@ -41,6 +42,12 @@
 	<style>
 	.bold {
 		font-weight: bold;
+	}
+	.imageInput{
+	    display: inline-block;
+	    width: 150px;
+	    height: 100px;
+	    border: 1px solid;
 	}
 	</style>
 </head>
@@ -181,6 +188,12 @@
 				<tr>
 					<td style="vertical-align:top"><span class="bold">TextBox</span></td>
 					<td style="text-align:right"><input data-dojo-type="dojox.mobile.TextBox" maxLength="9" selectOnClick="true" placeHolder="max 9 chars"></td>
+				</tr>
+				<tr>
+					<td valign="top"><span class="bold">ImageInput</span></td>
+					<td align="right">
+						<input dojoType="dojox.mobile.ImageInput" class="imageInput"/>
+					</td>
 				</tr>
 				<tr>
 					<td style="vertical-align:top"><span class="bold">SearchBox</span></td>
